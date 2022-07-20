@@ -1,0 +1,225 @@
+/* animation */
+@keyframes waviy{
+    0%, 40%, 100%{
+        transform: translateY(0);
+    }
+    20%{
+        transform: translateY(-20px);
+        color: #e78787;
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+}
+/* Start of banner */
+.header-section{
+    height: auto;
+}
+.header{
+    margin: 3% 5%;
+    border-radius: 30px;
+    background-color: black;
+    display: flex;
+    padding: 5% 5% 0 5%;
+    gap: 10%;
+}
+.banner-text{
+    text-align: left;
+    color: white;
+    flex: 1;
+}
+.banner-text h1{
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 80px;
+}
+.waviy span{
+    display: inline-block;
+    position: relative;
+    animation: waviy 1s infinite;
+    animation-delay: calc(.1s * var(--i));
+}
+.banner-text> .overflow{
+    font-size: 16px;
+    margin-bottom: 50px;
+    line-height: 26px;
+}
+.banner-text a{
+    text-decoration: none;
+    background-color: #DD0000;
+    padding: 16px 25px;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;  
+}
+.header img{
+    width: 15%;
+    flex: 1;
+}
+.banner-text a> i{
+    padding-left: 10px;
+}
+/* End of Banner */
+
+/* Main Content Style*/
+/* Side Bar */
+.middle-section{
+    height: auto;
+    margin: 6% 5%;
+}
+.parent-div{
+    display: flex;
+}
+.side-bar{
+    width: 20%;
+    height: 50%;
+    padding-left: 2%;
+    padding-right: 7%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-right: 2%;
+    background-color: black;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.upcoming-match a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+}
+.upcoming-match{
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+    padding: 8% 15%;
+}
+#blog-button{
+    background-color: #DD0000;
+    color: white;
+}
+/* Grid Section */
+.main-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.content-under-image{
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.content-under-image button{
+    height: 32px;
+    width: 100px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+.content-under-image p{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    margin-bottom: 1em;
+}
+.time-chat i{
+    font-weight: normal;
+}
+/* End of Main Section */
+.Viewall-button{
+    text-align: center;
+    visibility: hidden;
+}
+.Viewall-button a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500px;
+    line-height: 23px;
+    text-align: center;
+    color: white;
+    background-color: #DD0000;
+    border-radius: 5px;
+    padding: 12px 29px;
+    gap: 10px;
+}
+/* Footer */
+.footer{
+    height: auto;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin-top: 8%;
+}
+.footer h1{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 60px;
+    padding-top: 8%;
+    margin-bottom: 5%;
+}
+#footer-hr{
+    width: 80%;
+    margin-left: 10%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.contact-us a{
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #B9B9B9;
+}
+.contact-us{
+    padding: 3% 9%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.social-icon{
+    padding-bottom: 5%;
+}
+.social-icon a{
+    text-decoration: none;
+}
+.fa-brands{
+    margin: 1%;
+    font-size: 30px;
+    color: rgb(89, 183, 183);
+}
+/* style for website-02 */
+.web2-grid{
+    width: 100%;
+    grid-row-gap: 10%;
+    grid-column-gap: 10%;
+    margin-left: 3%;
+}
+.web2-grid .flag span{
+    color: #161616;
+    font-weight: 600;
+    padding-left: 5%;
+    padding-right: 5%;
+    position:relative;
+    top: -1.2em;
+}
+.web2-grid .para{
+    margin-top: 20px;
+    text-align: center;
+    padding-right: 20%;
+}
+.web2-grid .para h3{
+    margin-bottom: 15px;
+}
+.web2-grid .para p{
+    font-size: 16px;
+    line-height: 20px;
+    color: #4D4D4D;
+}
